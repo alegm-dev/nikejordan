@@ -1,0 +1,67 @@
+[{
+        "id": 1,
+        "category": "zapatillas",
+        "content": "",
+        "name": "AIR JORDAN RETRO 1",
+        "image": "https://static.nike.com/a/images/qryealurfdus7dw9oemd/air-jordan-6.png",
+        "image2": "https://static.nike.com/a/images/qgm7kdugevt1s6octxff/air-jordan-6.png",
+        "description": "El primer estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
+        "price": 1234,
+        "stock": 0
+    },
+    {
+        "id": 2,
+        "category": "zapatillas",
+        "content": "",
+        "name": "AIR JORDAN RETRO 2",
+        "image": "https://static.nike.com/a/images/lzl2rbnjgybezkmqggng/air-jordan-7.png",
+        "image2": "https://static.nike.com/a/images/gfjtefe8uaztsre9ymln/air-jordan-7.png",
+        "description": "El segundo estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
+        "price": 1234,
+        "stock": 4
+    },
+    {
+        "id": 3,
+        "category": "zapatillas",
+        "content": "",
+        "name": "AIR JORDAN RETRO 3",
+        "image": "https://static.nike.com/a/images/gk6k9fjhxiq1y492m2iy/air-jordan-8.png",
+        "image2": "https://static.nike.com/a/images/t8vmdk6lamopv2vvpfvk/air-jordan-8.png",
+        "description": "El tercer estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
+        "price": 1234,
+        "stock": 3
+    },
+    {
+        "id": 4,
+        "category": "zapatillas",
+        "content": "",
+        "name": "AIR JORDAN RETRO 4",
+        "image": "https://static.nike.com/a/images/teeucximxbxwjzrkullm/air-jordan-9.png",
+        "image2": "https://static.nike.com/a/images/iq0h7dht6cl1cfujoavc/air-jordan-9.png",
+        "description": "El cuarto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
+        "price": 1234,
+        "stock": 2
+    },
+    {
+        "id": 5,
+        "category": "zapatillas",
+        "content": "",
+        "name": "AIR JORDAN RETRO 5",
+        "image": "https://c.static-nike.com/a/images/dekz7tobf5le85pl56qb/air-jordan-10.png",
+        "image2": "https://c.static-nike.com/a/images/lku6ibordklchc72z9v0/air-jordan-10.png",
+        "description": "El quinto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
+        "price": 1234,
+        "stock": 1
+    },
+    {
+        "id": 6,
+        "category": "zapatillas",
+        "content": "",
+        "name": "AIR JORDAN RETRO 6",
+        "image": "https://static.nike.com/a/images/hawpxsyk4byntdylzgob/air-jordan-12.png",
+        "image2": "https://static.nike.com/a/images/h2aoa5nrmmcfmxkoj83b/air-jordan-12.png",
+        "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
+        "price": 1234,
+        "stock": 0
+    }
+]
