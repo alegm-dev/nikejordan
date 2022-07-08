@@ -24,7 +24,6 @@ export const Login = () => {
   return (
     <User>
       <Link to="/login" className="Nickname">
-        User
         <FiUser className="Avatar" />
       </Link>
     </User>

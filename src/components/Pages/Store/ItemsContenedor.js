@@ -2,9 +2,16 @@ import styled from "styled-components";
 
 const ItemsContenedor = styled.div`
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   ul.sneakers {
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 16px;
     justify-items: center;
     align-items: center;
@@ -12,7 +19,7 @@ const ItemsContenedor = styled.div`
       list-style: none;
       .card {
         position: relative;
-        width: 300px;
+        width: 260px;
         height: 420px;
         background-color: #fff;
         border-radius: 5px;
@@ -39,7 +46,7 @@ const ItemsContenedor = styled.div`
           bottom: 0;
           left: 0;
           font-weight: 600;
-          font-size: 10rem;
+          font-size: 7rem;
           color: #f1f1f1f1;
         }
         .imgBox {
@@ -53,7 +60,7 @@ const ItemsContenedor = styled.div`
           z-index: 1;
           img {
             position: absolute;
-            max-width: 100%;
+            max-width: 120%;
             transition: 0.5s;
             top: 0;
           }
@@ -87,11 +94,14 @@ const ItemsContenedor = styled.div`
           }
         }
         &:hover .contentBox {
-          top: 60%;
+          top: 50%;
           opacity: 1;
         }
       }
     }
+  }
+  @media (max-width: 991px) {
+    flex-direction: column;
   }
 `;
 

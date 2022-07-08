@@ -16,14 +16,12 @@ export const ItemDetail = ({ shoppingCart, setShoppingCart }) => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json"
-        }
+          Accept: "application/json",
+        },
       })
         .then((resp) => resp.json())
         .then((data) => {
-          setCardDate(
-            data.filter(($data) => $data.id === Number(parms.dateId))
-          );
+          setCardDate(data.filter(($data) => $data.name === parms.dateId));
           setIsLoading(false);
         })
         .catch((err) => console.log(err));
@@ -37,11 +35,14 @@ export const ItemDetail = ({ shoppingCart, setShoppingCart }) => {
     <DetailContainer>
       <ArrowBack link="/store" />
       <div className="Box-image">
-        <img src={cardDate[0]?.image} alt="imagen de zapatilla jordan" />
         <img src={cardDate[0]?.image2} alt="imagen de zapatilla jordan" />
+        <img src={cardDate[0]?.image} alt="imagen de zapatilla jordan" />
       </div>
       <div className="Box-info">
         <h3 className="name">{cardDate[0]?.name}</h3>
+        <p className="model-color">
+          {cardDate[0]?.model} ({cardDate[0]?.color})
+        </p>
         <h4 className="price">${cardDate[0]?.price}</h4>
         <p className="descrip">{cardDate[0]?.description}</p>
         <Counter

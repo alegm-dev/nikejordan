@@ -15,7 +15,7 @@ export const Home = () => {
         <h3>BE LIKE JORDAN WITH NIKE!</h3>
         <div className="center-btn">
           <Button>
-            <Link to="/store">Shop now</Link>
+            <Link to="/store">Ver mas</Link>
           </Button>
         </div>
       </div>

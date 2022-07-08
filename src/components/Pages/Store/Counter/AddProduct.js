@@ -23,12 +23,11 @@ const ButtonStyled = styled(Button)`
 export const AddProduct = ({
   stock,
   numCounter,
-  cardDate,
   btnAddProduct,
   setBtnAddProduct,
   shoppingCart,
   setShoppingCart,
-  counterProduct
+  counterProduct,
 }) => {
   //Renderiza el boton finalizar compra
   const finishShop = () => {
@@ -43,7 +42,7 @@ export const AddProduct = ({
       toast("Seleccionar minimo 1 unidad", {
         icon: "❗",
         id: "noProduct",
-        duration: 2000
+        duration: 2000,
       });
     } else if (numCounter > 0) {
       toast.success(

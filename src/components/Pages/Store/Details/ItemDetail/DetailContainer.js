@@ -39,6 +39,9 @@ const DetailContainer = styled.div`
       color: #000;
       font-size: 42px;
     }
+    .model-color {
+      color: grey;
+    }
     .price {
       font-size: 32px;
       font-weight: 400;

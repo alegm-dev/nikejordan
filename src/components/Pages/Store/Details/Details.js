@@ -34,7 +34,7 @@ export const Details = ({ item }) => {
   return (
     <>
       <ButtonStyle>
-        <Link to={`/itemDetail/${item.id}`}>See more</Link>
+        <Link to={`/itemDetail/${item.name}`}>Ver detalle</Link>
       </ButtonStyle>
     </>
   );

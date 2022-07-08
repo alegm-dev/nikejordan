@@ -24,7 +24,7 @@ const Cart = styled.div`
   }
 `;
 
-export const ShoppingCart = ({ shoppingCart, setShoppingCart }) => {
+export const ShoppingCart = ({ shoppingCart }) => {
   console.log(
     shoppingCart === 0
       ? "no hay nada en el carrito"

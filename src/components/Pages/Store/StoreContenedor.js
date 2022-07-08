@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const StoreContenedor = styled.div`
-  display: flex;
-  justify-content: center;
   margin-top: 2rem;
   text-align: center;
   overflow: hidden;

@@ -8,7 +8,7 @@ const BurgerContainer = styled.div`
   color: #bf3f43;
   padding: 8px 8px 0 8px;
   border-radius: 100px;
-  z-index: 20;
+  z-index: 400;
   cursor: pointer;
   :first-child:hover {
     opacity: 0.5;
@@ -26,7 +26,6 @@ export const Burger = ({ openNav, handleClick }) => {
       ) : (
         <HiOutlineMenuAlt2 />
       )}
-      {console.log(openNav)}
     </BurgerContainer>
   );
 };

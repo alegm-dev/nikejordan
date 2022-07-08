@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "../../App.css";
 
 const Menu = styled.ul`
   display: flex;
@@ -40,7 +39,7 @@ const Menu = styled.ul`
     top: -16px;
     left: ${(props) => (props.openNav ? "0" : "-1000px")};
     transition: left 0.5s linear;
-    z-index: 10;
+    z-index: 300;
 
     li {
       margin: 3rem;

@@ -12,6 +12,6 @@ const ButtonContainer = styled.div`
   }
 `;
 
-export const CounterIcon = (props) => {
-  return <ButtonContainer>{props.Icon}</ButtonContainer>;
+export const CounterIcon = ({ Icon }) => {
+  return <ButtonContainer>{Icon}</ButtonContainer>;
 };

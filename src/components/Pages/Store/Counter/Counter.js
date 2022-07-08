@@ -40,7 +40,7 @@ export const Counter = ({ stock, cardDate, shoppingCart, setShoppingCart }) => {
       setCounterProduct([...counterProduct, ...cardDate]);
     }
   };
-  console.log(cardDate);
+
   const SubtractProduct = () => {
     if (numCounter > 0) {
       setNumCounter(numCounter - 1);
