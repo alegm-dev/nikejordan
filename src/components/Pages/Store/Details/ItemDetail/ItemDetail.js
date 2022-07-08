@@ -9,6 +9,7 @@ export const ItemDetail = ({ shoppingCart, setShoppingCart }) => {
   const parms = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [cardDate, setCardDate] = useState([]);
+  console.log(parms);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,7 +22,9 @@ export const ItemDetail = ({ shoppingCart, setShoppingCart }) => {
       })
         .then((resp) => resp.json())
         .then((data) => {
-          setCardDate(data.filter(($data) => $data.name === parms.dateId));
+          setCardDate(
+            data.filter(($data) => $data.id === Number(parms.dateId))
+          );
           setIsLoading(false);
         })
         .catch((err) => console.log(err));
