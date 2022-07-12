@@ -1,7 +1,7 @@
 import { useCartContext } from "../../../../../contexts/CartContext";
 import ShoppingContenedor from "./ShoppinContenedor";
 import { ArrowBack } from "../../../../ArrowBack/ArrowBack";
-import Button from "../../../../../styledDefault/Button";
+import Button from "../../../../../StyledDefault/Button";
 import Card from "./CardStyled";
 //import { CounterCart } from "./CounterCart";
 
@@ -19,7 +19,7 @@ export const ShoppingList = () => {
           {cart.length > 0 ? (
             cart.map((item) => {
               return (
-                <Card>
+                <Card key={item.product.id}>
                   <div className="box-image">
                     <img src={item.product.image2} alt={item.name} />
                     <img src={item.product.image} alt={item.name} />

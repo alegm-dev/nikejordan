@@ -7,7 +7,7 @@
         "image2": "https://c.static-nike.com/a/images/f8fwrypuyleyqjbizrrk/air-jordan-1.png",
         "description": "El primer estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Clasico",
-        "price": 1.234,
+        "price": 1234,
         "stock": 0
     },
     {
@@ -19,7 +19,7 @@
         "image2": "https://c.static-nike.com/a/images/qsmvyzsxnpfznstsimu4/air-jordan-2.png",
         "description": "El segundo estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Clasico",
-        "price": 5.678,
+        "price": 5678,
         "stock": 12
     },
     {
@@ -31,7 +31,7 @@
         "image2": "https://c.static-nike.com/a/images/q7nt8hefp330wdewgayh/air-jordan-3.png",
         "description": "El tercer estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Retro",
-        "price": 8.911,
+        "price": 8911,
         "stock": 8
     },
     {
@@ -43,7 +43,7 @@
         "image2": "https://static.nike.com/a/images/ssri8ka58k3gfw2d69rf/air-jordan-4.png",
         "description": "El cuarto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Retro",
-        "price": 1.112,
+        "price": 1112,
         "stock": 4
     },
     {
@@ -55,7 +55,7 @@
         "image2": "https://c.static-nike.com/a/images/agffc9hmef2b9k2tbx5h/air-jordan-5.png",
         "description": "El quinto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Retro",
-        "price": 1.314,
+        "price": 1314,
         "stock": 1
     },
     {
@@ -67,7 +67,7 @@
         "image2": "https://static.nike.com/a/images/qryealurfdus7dw9oemd/air-jordan-6.png",
         "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Retro",
-        "price": 1.516,
+        "price": 1516,
         "stock": 10
     },
     {
@@ -79,7 +79,7 @@
         "image2": "https://static.nike.com/a/images/lzl2rbnjgybezkmqggng/air-jordan-7.png",
         "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Edicion especial",
-        "price": 1.718,
+        "price": 1718,
         "stock": 16
     },
     {
@@ -91,7 +91,7 @@
         "image2": "https://static.nike.com/a/images/gk6k9fjhxiq1y492m2iy/air-jordan-8.png",
         "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Edicion especial",
-        "price": 1.921,
+        "price": 1921,
         "stock": 0
     },
     {
@@ -103,7 +103,7 @@
         "image2": "https://static.nike.com/a/images/teeucximxbxwjzrkullm/air-jordan-9.png",
         "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Retro",
-        "price": 2.122,
+        "price": 2122,
         "stock": 15
     },
     {
@@ -115,7 +115,7 @@
         "image2": "https://c.static-nike.com/a/images/dekz7tobf5le85pl56qb/air-jordan-10.png",
         "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Edicion especial",
-        "price": 2.324,
+        "price": 2324,
         "stock": 0
     },
     {
@@ -127,7 +127,7 @@
         "image2": "https://static.nike.com/a/images/h2aoa5nrmmcfmxkoj83b/air-jordan-12.png",
         "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Edicion especial",
-        "price": 2.526,
+        "price": 2526,
         "stock": 18
     },
     {
@@ -139,7 +139,7 @@
         "image2": "https://static.nike.com/a/images/xc039s1dqknncoifzahz/air-jordan-13.png",
         "description": "El sexto estilo exclusivo de MJ se lanzó durante la temporada 1990-1991, en la que 'His Airness' se enfrentó a sus rivales para conseguir su primer campeonato. Ahora, está de vuelta en una variedad de esquemas de colores. Equípate para el 30 aniversario del Air Jordan 6 con este estilo atemporal clásico.",
         "model": "Edicion especial",
-        "price": 2.728,
+        "price": 2728,
         "stock": 0
     }
 ]
