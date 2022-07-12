@@ -1,6 +1,6 @@
 import HomeContainer from "./HomeContainer";
 import ShoesJOrdan from "../../../Assets/image/Jordan01.png";
-import Button from "../../../styledDefault/Button";
+import Button from "../../../StyledDefault/Button";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
