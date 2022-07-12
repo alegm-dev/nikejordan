@@ -51,9 +51,10 @@ const HomeContainer = styled.div`
       top: 50px;
       a {
         text-decoration: none;
-        color: #bf3f43;
         font-size: 18px;
         font-weight: 600;
+        color: #bf3f43;
+        white-space: nowrap;
       }
       &::after {
         content: "";

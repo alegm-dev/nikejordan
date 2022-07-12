@@ -5,11 +5,12 @@ import { Loader } from "../../../../Loader/Loader";
 import DetailContainer from "./DetailContainer";
 import { ArrowBack } from "../../../../ArrowBack/ArrowBack";
 
-export const ItemDetail = ({ shoppingCart, setShoppingCart }) => {
+export const ItemDetail = () => {
   const parms = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [cardDate, setCardDate] = useState([]);
-  console.log(parms);
+
+  window.scrollTo(0, 0);
 
   useEffect(() => {
     setTimeout(() => {
@@ -46,14 +47,14 @@ export const ItemDetail = ({ shoppingCart, setShoppingCart }) => {
         <p className="model-color">
           {cardDate[0]?.model} ({cardDate[0]?.color})
         </p>
-        <h4 className="price">${cardDate[0]?.price}</h4>
+        <h4 className="price">
+          ${Intl.NumberFormat("es-AR").format(cardDate[0]?.price)}
+        </h4>
         <p className="descrip">{cardDate[0]?.description}</p>
         <Counter
+          className="counter"
           stock={cardDate[0]?.stock}
           cardDate={cardDate}
-          className="counter"
-          shoppingCart={shoppingCart} //state
-          setShoppingCart={setShoppingCart} //setState
         />
       </div>
     </DetailContainer>

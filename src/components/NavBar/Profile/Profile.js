@@ -8,11 +8,11 @@ const ProfileContainer = styled.div`
   align-items: flex-end;
 `;
 
-export const Profile = ({ shoppingCart }) => {
+export const Profile = () => {
   return (
     <ProfileContainer>
       <Login />
-      <ShoppingCart shoppingCart={shoppingCart} />
+      <ShoppingCart />
     </ProfileContainer>
   );
 };

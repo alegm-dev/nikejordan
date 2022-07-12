@@ -10,7 +10,7 @@ const FilterContainer = styled.div`
     margin-bottom: 1rem;
   }
   .card-filter {
-    width: 160px;
+    width: 150px;
     height: auto;
     position: relative;
     display: flex;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from "../../../../StyledDefault/Button";
+import Button from "../../../../styledDefault/Button";
 import { Link } from "react-router-dom";
 
 const ButtonStyle = styled(Button)`
@@ -34,7 +34,7 @@ export const Details = ({ item }) => {
   return (
     <>
       <ButtonStyle>
-        <Link to={`/itemDetail/${item.id}`}>Ver detalle</Link>
+        <Link to={`/itemDetail/${item.id}`}>Ver mas</Link>
       </ButtonStyle>
     </>
   );

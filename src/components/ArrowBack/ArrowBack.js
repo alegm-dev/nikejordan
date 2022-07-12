@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ArrowStyle = styled.button`
   text-decoration: none;
-  background: #fff;
+  background: transparent;
   font-size: 30px;
   position: absolute;
   border: none;

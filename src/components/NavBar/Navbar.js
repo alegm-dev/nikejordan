@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { MenuItems } from "./MenuItems";
 import { Burger } from "./Burger";
-import { SiNike } from "react-icons/si";
+import { SiNike, SiJordan } from "react-icons/si";
+import { Profile } from "./Profile/Profile";
+import { NavLink, Link } from "react-router-dom";
+
 import styled from "styled-components";
 import NavbarContainer from "./NavbarContainer";
 import MenuStyled from "./MenuStyled";
-import { SiJordan } from "react-icons/si";
-import { Profile } from "./Profile/Profile";
-import { NavLink, Link } from "react-router-dom";
 
 const Logo = styled.div`
   font-size: 48px;
@@ -23,7 +23,7 @@ const Logo = styled.div`
   }
 `;
 
-export const Navbar = ({ shoppingCart, setShoppingCart }) => {
+export const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
 
   const handleClick = () => {
@@ -61,10 +61,7 @@ export const Navbar = ({ shoppingCart, setShoppingCart }) => {
           );
         })}
       </MenuStyled>
-      <Profile
-        shoppingCart={shoppingCart} //state
-        setShoppingCart={setShoppingCart} //setState
-      />
+      <Profile />
     </NavbarContainer>
   );
 };

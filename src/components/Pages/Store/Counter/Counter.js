@@ -29,22 +29,19 @@ const CounterWrapper = styled.div`
   visibility: ${(props) => (props.stock === 0 ? "hidden" : "visible")};
 `;
 
-export const Counter = ({ stock, cardDate, shoppingCart, setShoppingCart }) => {
-  const [numCounter, setNumCounter] = useState(0);
+export const Counter = ({ stock, cardDate }) => {
+  const [numCounter, setNumCounter] = useState(1);
   const [btnAddProduct, setBtnAddProduct] = useState(false); //Estado del boton para agregar al carrito
-  const [counterProduct, setCounterProduct] = useState([]);
 
   const addProduct = () => {
     if (numCounter < stock) {
       setNumCounter(numCounter + 1);
-      setCounterProduct([...counterProduct, ...cardDate]);
     }
   };
 
   const SubtractProduct = () => {
     if (numCounter > 0) {
       setNumCounter(numCounter - 1);
-      setCounterProduct(counterProduct.splice(1));
     }
   };
 
@@ -61,14 +58,11 @@ export const Counter = ({ stock, cardDate, shoppingCart, setShoppingCart }) => {
       )}
 
       <AddProduct
-        cardDate={cardDate}
         stock={stock}
+        cardDate={cardDate}
         numCounter={numCounter} //state
         btnAddProduct={btnAddProduct} //setState
         setBtnAddProduct={setBtnAddProduct} //setState
-        shoppingCart={shoppingCart} //state
-        setShoppingCart={setShoppingCart} //setState
-        counterProduct={counterProduct}
       />
       <p className="stock">Stock disponible: {stock}</p>
     </CounterContainer>
