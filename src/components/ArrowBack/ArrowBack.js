@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FiArrowLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { Tooltip } from "@mui/material";
 
 const ArrowStyle = styled.button`
   text-decoration: none;
@@ -19,10 +20,12 @@ const ArrowStyle = styled.button`
 
 export const ArrowBack = ({ link }) => {
   return (
-    <ArrowStyle>
-      <Link to={link} className="Arrow-back">
-        <FiArrowLeft />
-      </Link>
-    </ArrowStyle>
+    <Tooltip title="Volver a la tienda">
+      <ArrowStyle>
+        <Link to={link} className="Arrow-back">
+          <FiArrowLeft />
+        </Link>
+      </ArrowStyle>
+    </Tooltip>
   );
 };
