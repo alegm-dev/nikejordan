@@ -1,35 +1,37 @@
 import CardStyled from "./CardStyled";
 import { useCartContext } from "../../../../../contexts/CartContext";
+import { Link } from "react-router-dom";
 
 export const Card = ({ item }) => {
   const { functionContext } = useCartContext();
   const { removeFromCart } = functionContext;
   const { product, quantity } = item;
-
   return (
     <CardStyled>
-      <div className="box-image">
+      <li className="box-image">
         <img src={product.image2} alt={product.name} />
         <img src={product.image} alt={product.name} />
-        <div className="box-info">
+      </li>
+      <li className="box-info">
+        <Link to={`/itemDetail/${product.id}`}>
           <h3>{product.name}</h3>
-          <p className="model-color">
-            {product.model} {product.color}
-          </p>
-          <p className="price">
-            ${Intl.NumberFormat("es-AR").format(product.price)}
-          </p>
-          <h4 className="quantity">(x{quantity})</h4>
+        </Link>
+        <p className="model-color">
+          {product.model} {product.color}
+        </p>
+        <div className="price">
+          <p>${Intl.NumberFormat("es-AR").format(product.price)}</p>
         </div>
-      </div>
-      <div className="btn">
+        <p className="quantity">(X{quantity})</p>
+      </li>
+      <li className="box-delete">
         <button
           className="btn-delete"
           onClick={() => removeFromCart(product.id)}
         >
           Eliminar
         </button>
-      </div>
+      </li>
     </CardStyled>
   );
 };

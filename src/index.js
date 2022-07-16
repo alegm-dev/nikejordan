@@ -2,6 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCqrUfD3Uq-pfyowGIunHC8vL-BbbxNLnU",
+  authDomain: "nike-airjordan.firebaseapp.com",
+  projectId: "nike-airjordan",
+  storageBucket: "nike-airjordan.appspot.com",
+  messagingSenderId: "34909686066",
+  appId: "1:34909686066:web:36a1568107006207a66f2b",
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

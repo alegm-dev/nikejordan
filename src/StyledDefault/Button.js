@@ -14,9 +14,6 @@ const Button = styled.button`
   &:hover {
     opacity: 0.9;
   }
-  &:active {
-    top: 2px;
-  }
 `;
 
 export default Button;

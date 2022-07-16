@@ -1,5 +1,5 @@
 import ButtonStyled from "./ButtonStyled";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../../../contexts/CartContext";
 
@@ -10,55 +10,45 @@ export const AddProduct = ({
   btnAddProduct,
   setBtnAddProduct,
 }) => {
-  const { functionContext } = useCartContext();
+  const { cart, functionContext } = useCartContext();
+  const { addToCart } = functionContext;
 
   //Funcion que pasa los datos del boton finalizar compra al carrito
   const onAdd = () => {
-    //recibe la cantidad que esta en itemcount y se la pasa a la funcion addtocart
-    functionContext.addToCart(cardDate[0], numCounter);
-    //Renderiza el boton finalizar compra
+    addToCart(cardDate[0], numCounter);
+    stateBtn();
+  };
+  const goToCart = () => {
     setTimeout(() => {
-      setBtnAddProduct(true);
-    }, 800);
+      setBtnAddProduct(true); //Renderiza el boton finalizar compra
+    }, 1000);
   };
-
-  //Notifica cuantos elemento se agregaron al carrito
-  const notify = () => {
-    if (numCounter === 0) {
-      toast("Seleccione minimo 1 unidad", {
-        icon: "❗",
-        id: "noProduct",
-        duration: 2000,
-      });
-    } else if (numCounter > 0) {
-      toast.success(
-        `${
-          numCounter === 1
-            ? `Se agrego ${numCounter} producto`
-            : `Se agregaron ${numCounter} productos`
-        } al carrito!`,
-        { id: "product", duration: 2000 }
-      );
-      onAdd();
-    }
+  const stateBtn = () => {
+    const producto = cart.filter((i) => i.product.id === cardDate[0].id); //Se obtiene el producto seleccionado.
+    !producto.length
+      ? goToCart()
+      : producto.forEach((i) => {
+          console.log(i.quantity + " cantidad produc");
+          const n = numCounter + i.quantity;
+          if (n <= cardDate[0].stock) {
+            return goToCart();
+          } else if (i.quantity === cardDate[0].stock) {
+            return goToCart();
+          }
+        });
   };
-
-  //console.log("Productos que estan en el carrito de compras👇");
-  //console.log(cart);
 
   const btn = (
-    <ButtonStyled stock={stock} onClick={notify}>
+    <ButtonStyled stock={stock} onClick={onAdd}>
       {stock > 0 ? "Agregar al carrito" : "No hay stock"}
-      <Toaster />
+      <Toaster reverseOrder={true} />
     </ButtonStyled>
   );
 
   return btnAddProduct && numCounter > 0 ? (
-    <ButtonStyled btnAddProduct={btnAddProduct}>
-      <Link to="/shoppingList" className="Go-cart">
-        Ir al carrito
-      </Link>
-    </ButtonStyled>
+    <Link to="/shoppingList" style={{ width: "100%" }}>
+      <ButtonStyled btnAddProduct={btnAddProduct}>Ir al carrito</ButtonStyled>
+    </Link>
   ) : (
     btn
   );

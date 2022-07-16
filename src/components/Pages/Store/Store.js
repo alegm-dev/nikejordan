@@ -4,6 +4,7 @@ import ItemsContenedor from "./ItemsContenedor";
 import { Loader } from "../../Loader/Loader";
 import { Filter } from "./Filter/Filter";
 import { Cards } from "./Cards/Cards";
+//import {getFirestore, doc, getDo, colecction, getDocs} from 'firebase/firestore'
 
 export const Store = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,21 @@ export const Store = () => {
     }, 3000);
     // Setea informacion en nuestro state
   }, []);
+
+  /* Firebase fetch
+useEffect(()=>{
+  const db = getFirestore();
+
+  const productRef = query(colecction(db,'products'), where('id','==), parms.id)))
+                     
+  
+  getDocs(productRef).then(snapshot)=> {
+      setProduct(snapshot.docs.map(doc => doc.data()))
+      setProduct(snapshot.docs.map(doc => doc.data().id === params.id &&oc.data())) //para details
+  })
+},[])
+  
+  */
 
   return isLoading ? (
     <Loader />

@@ -21,14 +21,14 @@ const DetailContainer = styled.div`
     img {
       position: absolute;
       max-width: 100%;
-      width: 960px;
-      min-width: 560px;
+      width: 760px;
+      min-width: 460px;
       transition: 0.5s;
       top: 0;
     }
   }
   .Box-info {
-    width: 40%;
+    width: 60%;
     height: auto;
     position: relative;
     display: flex;
@@ -56,6 +56,7 @@ const DetailContainer = styled.div`
   }
   @media (max-width: 991px) {
     flex-direction: column;
+    overflow: hidden;
     .Box-image {
       width: 100%;
     }

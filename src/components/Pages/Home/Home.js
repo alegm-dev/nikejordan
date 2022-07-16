@@ -14,9 +14,9 @@ export const Home = () => {
         <h2>AIR JORDAN 1</h2>
         <h3>BE LIKE JORDAN WITH NIKE!</h3>
         <div className="center-btn">
-          <Button>
-            <Link to="/store">Ver mas</Link>
-          </Button>
+          <Link to="/store">
+            <Button className="see-more">Ver mas</Button>
+          </Link>
         </div>
       </div>
       <div className="Home-right">

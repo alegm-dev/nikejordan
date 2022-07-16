@@ -3,64 +3,100 @@ import styled from "styled-components";
 const Card = styled.div`
   position: relative;
   width: 100%;
-  height: 100px;
+  min-height: 140px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px 0px rgba(3, 3, 3, 0.3);
+  box-shadow: 0 0 5px 0px rgb(3 3 3 / 30%);
   margin: 0.3rem 0;
+  list-style: none;
+  overflow: hidden;
+  &::after {
+    content: "Nike";
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    font-size: 13rem;
+    font-weight: 600;
+    color: #f1f1f1;
+    opacity: 0.5;
+  }
   .box-image {
     position: relative;
+    left: 5px;
+    width: 150px;
+    height: 130px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
     display: flex;
-    top: 0;
-    left: 0;
+    overflow: hidden;
+    &:hover img {
+      transform: scale(1.5) translateY(-30%);
+    }
     img {
       position: absolute;
-      max-width: 100px;
-      top: 50%;
+      max-width: 100%;
+      top: 70%;
       transform: translateY(-50%);
-      border-right: 1px solid lightgrey;
       padding: 0 0.1rem;
+      transition: 0.5s linear;
+      z-index: 10;
     }
-    .box-info {
-      position: relative;
-      left: 7rem;
-      margin: auto 0;
-      display: flex;
-      flex-direction: column;
+  }
+  .box-info {
+    width: fit-content;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 1rem;
+    line-height: 1;
+    z-index: 10;
+    .quantity {
+      color: darkgrey;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
       h3 {
-        font-size: 14pxs;
+        font-size: 24px;
+        color: #333;
       }
-      .model-color {
-        font-size: 12px;
-        color: grey;
-        margin-bottom: 0.1rem;
-      }
-      .price {
-        width: fit-content;
-        padding: 0.2rem;
-        margin: 0.2rem 0;
+    }
+    .model-color {
+      font-size: 16px;
+      font-weight: 300;
+      color: grey;
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      margin-bottom: 0.5rem;
+      p {
         background: green;
-        color: #fff;
+        padding: 0.2rem;
+        font-size: 20px;
         border-radius: 5px;
-      }
-      .quantity {
-        color: darkgrey;
-        font-size: 16px;
-        font-weight: 400;
+        color: #fff;
       }
     }
   }
-  .btn {
+  .box-delete {
     margin: 1.5rem;
+    z-index: 10;
     .btn-delete {
+      position: absolute;
+      bottom: 0;
+      right: 0;
       background: transparent;
-      color: #333;
       border: none;
+      color: #bf3f43;
+      padding: 16px 24px;
+      font-size: 14px;
       font-family: Roboto;
-      font-weight: 500;
       cursor: pointer;
     }
   }

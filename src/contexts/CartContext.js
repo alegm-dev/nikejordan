@@ -1,4 +1,5 @@
 import { useState, createContext, useContext } from "react";
+import toast from "react-hot-toast";
 
 export const CartContext = createContext();
 
@@ -12,15 +13,50 @@ export const CartProvider = ({ children }) => {
     //verificar si el producto existe en el carrito
     if (isInCart(product.id)) {
       const newCart = [...cart]; //hacemos copia de producto
-      for (const element of newCart) {
-        //busco cual producto del carrito conicid con el producto
-        if (element.product.id === product.id) {
-          element.quantity = element.quantity + quantity; //cuando le encontramos , le sumamos la cantidad
+      newCart.forEach((i) => {
+        //busco cual producto del carrito concide con el producto
+        if (i.product.id === product.id) {
+          if (i.quantity + quantity <= product.stock) {
+            notify(quantity);
+            i.quantity += quantity;
+          } else if (product.stock === i.quantity) {
+            toast.error(`Superaste el stock disponible de este modelo`, {
+              id: "noStock",
+            });
+          } else {
+            toast.error(
+              `Solo puedes agregar ${
+                product.stock - i.quantity
+              } producto de este modelo`,
+              { id: "stock" }
+            );
+          }
         }
-      }
+      });
       setCart(newCart);
     } else {
       setCart([...cart, { product: product, quantity: quantity }]);
+      notify(quantity);
+    }
+  };
+
+  //Notifica cuantos elemento se agregaron al carrito
+  const notify = (numCounter) => {
+    if (numCounter === 0) {
+      toast("Seleccione minimo 1 unidad", {
+        icon: "❗",
+        id: "noProduct",
+        duration: 2000,
+      });
+    } else if (numCounter > 0) {
+      toast.success(
+        `${
+          numCounter === 1
+            ? `Se agrego ${numCounter} producto`
+            : `Se agregaron ${numCounter} productos`
+        } al carrito!`,
+        { id: "product", duration: 2000 }
+      );
     }
   };
 

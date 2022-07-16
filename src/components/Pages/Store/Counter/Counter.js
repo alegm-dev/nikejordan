@@ -6,6 +6,9 @@ import { CounterIcon } from "./CounterIcon";
 import { AddProduct } from "./AddProduct";
 
 const CounterContainer = styled.div`
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +26,7 @@ const CounterWrapper = styled.div`
   align-items: center;
   border: 1px solid grey;
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin: ${(props) => (props.stock === 0 ? "0rem" : "0.5rem")};
   visibility: ${(props) => (props.stock === 0 ? "hidden" : "visible")};
@@ -40,7 +43,7 @@ export const Counter = ({ stock, cardDate }) => {
   };
 
   const SubtractProduct = () => {
-    if (numCounter > 0) {
+    if (numCounter > 1) {
       setNumCounter(numCounter - 1);
     }
   };

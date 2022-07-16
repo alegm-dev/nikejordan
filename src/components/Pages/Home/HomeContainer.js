@@ -49,7 +49,7 @@ const HomeContainer = styled.div`
     .center-btn {
       position: relative;
       top: 50px;
-      a {
+      .see-more {
         text-decoration: none;
         font-size: 18px;
         font-weight: 600;
