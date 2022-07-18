@@ -9,9 +9,9 @@ const ItemsContenedor = styled.div`
   ul.sneakers {
     width: 100%;
     min-height: 500px;
-    margin-bottom: 5rem;
+    margin: auto auto 5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 16px;
     justify-items: center;
     align-items: center;
@@ -19,7 +19,7 @@ const ItemsContenedor = styled.div`
       list-style: none;
       .card {
         position: relative;
-        width: 260px;
+        width: 280px;
         height: 420px;
         background-color: #fff;
         border-radius: 5px;

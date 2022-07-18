@@ -8,14 +8,13 @@ export const AddProduct = ({
   cardDate,
   numCounter,
   btnAddProduct,
-  setBtnAddProduct,
+  setBtnAddProduct
 }) => {
   const { cart, functionContext } = useCartContext();
   const { addToCart } = functionContext;
-
   //Funcion que pasa los datos del boton finalizar compra al carrito
   const onAdd = () => {
-    addToCart(cardDate[0], numCounter);
+    addToCart(cardDate, numCounter);
     stateBtn();
   };
   const goToCart = () => {
@@ -24,15 +23,15 @@ export const AddProduct = ({
     }, 1000);
   };
   const stateBtn = () => {
-    const producto = cart.filter((i) => i.product.id === cardDate[0].id); //Se obtiene el producto seleccionado.
+    const producto = cart.filter((i) => i.product.id === cardDate.id); //Se obtiene el producto seleccionado.
     !producto.length
       ? goToCart()
       : producto.forEach((i) => {
           console.log(i.quantity + " cantidad produc");
           const n = numCounter + i.quantity;
-          if (n <= cardDate[0].stock) {
+          if (n <= cardDate.stock) {
             return goToCart();
-          } else if (i.quantity === cardDate[0].stock) {
+          } else if (i.quantity === cardDate.stock) {
             return goToCart();
           }
         });

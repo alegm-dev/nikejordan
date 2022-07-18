@@ -19,9 +19,6 @@ const ButtonStyle = styled(Button)`
     background: #bf3f43;
     color: #fff;
   }
-  &:active {
-    top: 30px;
-  }
 `;
 
 export const Details = ({ item }) => {
