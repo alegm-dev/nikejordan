@@ -27,7 +27,6 @@ export const AddProduct = ({
     !producto.length
       ? goToCart()
       : producto.forEach((i) => {
-          console.log(i.quantity + " cantidad produc");
           const n = numCounter + i.quantity;
           if (n <= cardDate.stock) {
             return goToCart();
@@ -40,13 +39,15 @@ export const AddProduct = ({
   const btn = (
     <ButtonStyled stock={stock} onClick={onAdd}>
       {stock > 0 ? "Agregar al carrito" : "No hay stock"}
-      <Toaster reverseOrder={true} />
+      {/*<Toaster reverseOrder={true} />*/}
     </ButtonStyled>
   );
 
   return btnAddProduct && numCounter > 0 ? (
     <Link to="/shoppingList" style={{ width: "100%" }}>
-      <ButtonStyled btnAddProduct={btnAddProduct}>Ir al carrito</ButtonStyled>
+      <ButtonStyled btnAddProduct={btnAddProduct} className="goToCart">
+        Ir al carrito
+      </ButtonStyled>
     </Link>
   ) : (
     btn

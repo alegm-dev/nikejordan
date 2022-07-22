@@ -51,10 +51,14 @@ const HomeContainer = styled.div`
       top: 50px;
       .see-more {
         text-decoration: none;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 16px;
         color: #bf3f43;
         white-space: nowrap;
+        &:hover {
+          background: #bf3f43;
+          color: #fff;
+          border: 1px solid #bf3f43;
+        }
       }
       &::after {
         content: "";

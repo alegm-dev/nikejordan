@@ -6,6 +6,7 @@ export const Card = ({ item }) => {
   const { functionContext } = useCartContext();
   const { removeFromCart } = functionContext;
   const { product, quantity } = item;
+
   return (
     <CardStyled>
       <li className="box-image">

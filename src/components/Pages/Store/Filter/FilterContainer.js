@@ -19,7 +19,7 @@ const FilterContainer = styled.div`
     align-items: center;
     background: #fff;
     border: 1px solid lightgrey;
-    border-radius: 10px;
+    border-radius: 0.25rem;
     z-index: 200;
     .section {
       width: 100%;
@@ -44,7 +44,7 @@ const FilterContainer = styled.div`
         color: #000;
       }
     }
-    button.all {
+    button {
       font-size: 12px;
       margin: 1rem;
     }
@@ -87,7 +87,7 @@ const FilterContainer = styled.div`
     .card-filter {
       display: ${(props) => (props.filterModal ? "flex" : "none")};
       position: absolute;
-      border-radius: 0 10px 10px;
+      border-radius: 0 0.25rem 0.25rem;
       box-shadow: 0px 0px 5px 0 rgba(3, 3, 3, 0.3);
     }
   }

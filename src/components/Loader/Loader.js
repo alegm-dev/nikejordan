@@ -1,19 +1,23 @@
-import { ThreeBody } from "@uiball/loaders";
+import { RaceBy } from "@uiball/loaders";
 import styled from "styled-components";
 
 const LoaderContainer = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #333;
 `;
 
 export const Loader = () => {
   return (
     <LoaderContainer>
-      <ThreeBody size={50} speed={1.1} color="#bf3f43" />
+      Cargando
+      <RaceBy size={80} speed={1.5} color="#bf3f43" />
     </LoaderContainer>
   );
 };

@@ -11,6 +11,18 @@ export const Store = () => {
   const [product, setProduct] = useState();
   const [filterProduct, setFilterProduct] = useState();
 
+  useEffect(() => {
+    setTimeout(() => {
+      getAllProducts()
+        .then((data) => {
+          setIsLoading(false);
+          setProduct(data);
+          setFilterProduct(data);
+        })
+        .catch((err) => console.log(err));
+    }, 3000);
+  }, []);
+
   /* Firebase fetch
 useEffect(()=>{
   const db = getFirestore();
@@ -25,19 +37,18 @@ useEffect(()=>{
 },[])
   
   */
-  useEffect(() => {
-    setTimeout(() => {
-      getAllProducts()
-        .then((data) => {
-          setIsLoading(false);
-          setProduct(data);
-          setFilterProduct(data);
-        })
-        .catch((err) => console.log(err));
-    }, 3000);
-  }, []);
 
-  return isLoading ? (
+  /* Con fetch
+  
+  fetch("data.json", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+      
+ */ return isLoading ? (
     <Loader />
   ) : (
     <StoreContenedor>

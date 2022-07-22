@@ -6,9 +6,8 @@ const NavbaContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   background: transparent;
-  position: ${(props) => (props.scroll ? "sticky" : "relative")};
+  position: relative;
   padding: 1rem;
-  top: ${(props) => (props.scroll ? "0px" : "none")};
   margin-bottom: 5rem;
   .logoJordan {
     position: fixed;

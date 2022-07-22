@@ -24,17 +24,6 @@ export const ItemDetail = () => {
     }, 3000);
   }, [dateId]);
 
-  /*Con fetch u filter 
-  /*fetch("/data.json", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          .then(data => data.filter(($data) => $data.id === Number(parms.dateId)) s
-        },
-      })
-        .then((resp) => resp.json())*/
-  console.log(cardDate);
   return isLoading ? (
     <Loader />
   ) : (

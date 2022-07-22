@@ -6,6 +6,7 @@ import {
   getDocs,
   doc,
   getDoc,
+  addDoc,
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -43,7 +44,6 @@ export async function getProduct(id) {
   const refColecction = collection(db, "products");
   const docRef = doc(refColecction, id);
   const docSnapshot = await getDoc(docRef);
-
   const product = {
     ...docSnapshot.data(),
     id: docSnapshot.id,
@@ -51,4 +51,12 @@ export async function getProduct(id) {
 
   return product;
 }
+
+//Agregar una orden
+export async function createOrder(order) {
+  const refColecction = collection(db, "orders");
+  const docRef = addDoc(refColecction, order);
+  return docRef;
+}
+
 export default db;

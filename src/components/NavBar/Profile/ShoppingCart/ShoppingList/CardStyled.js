@@ -8,7 +8,7 @@ const Card = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   box-shadow: 0 0 5px 0px rgb(3 3 3 / 30%);
   margin: 0.3rem 0;
   list-style: none;
@@ -29,12 +29,10 @@ const Card = styled.div`
     left: 5px;
     width: 150px;
     height: 130px;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
+    border-right: 1px solid lightgrey;
     display: flex;
-    overflow: hidden;
     &:hover img {
-      transform: scale(1.5) translateY(-30%);
+      transform: scale(1.2) translateY(-40%);
     }
     img {
       position: absolute;
@@ -68,8 +66,7 @@ const Card = styled.div`
       }
     }
     .model-color {
-      font-size: 16px;
-      font-weight: 300;
+      font-size: 14px;
       color: grey;
       margin-bottom: 0.5rem;
     }
@@ -77,9 +74,10 @@ const Card = styled.div`
       margin-bottom: 0.5rem;
       p {
         background: green;
-        padding: 0.2rem;
+        padding: 0.2rem 0.8rem;
         font-size: 20px;
-        border-radius: 5px;
+        font-weight: 300;
+        border-radius: 0.25rem;
         color: #fff;
       }
     }

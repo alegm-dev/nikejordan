@@ -5,7 +5,7 @@ Air Jordan es un e-commerce para la venta de zapatillas Jordan,todos los modelos
 Cuenta con :
 
 - filtro : tomando las proiedades de la base de datos se generan filtros de productos
-- carrito: cuenta vista completa de los items del carrito, su total, y la opción de sacar un producto del carrito
+- carrito: cuenta con vista completa de los items del carrito, su total, y la opción de sacar un producto del carrito
 - vistas de listas de productos: vista general de productos con foto y detalles mínimos
 - vista de detalles: vista con todos los detalles del producto y la opción de agregar una cantidad del mismo
 - control de stock: revisa que los usuarios no puedan agregar más items al carrito de los que hay disponibles, y revisa el stock real al momento de generar la compra
@@ -34,7 +34,7 @@ Cuenta con :
 
 Uso de styled Components para dar formato a la aplicación.
 
-Uso de Hot toast y Mui material para las notificaciones
+Uso de SweetAlert2 y Mui material para las notificaciones
 
 Uso de React Icons y Uiball Loader para el diseño IU
 

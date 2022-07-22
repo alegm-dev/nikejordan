@@ -14,6 +14,7 @@ const ButtonStyled = styled(Button)`
   pointer-events: ${(props) => (props.stock === 0 ? "none" : "auto")};
   font-size: 16px;
   color: #fff;
+  border-radius: 0.25rem;
   margin-bottom: 0.5rem;
   border: none;
   white-space: nowrap;

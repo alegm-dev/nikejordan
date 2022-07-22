@@ -13,10 +13,7 @@ const Menu = styled.ul`
     text-decoration: none;
     color: #bf3f43;
     font-size: 16px;
-    transition: border 0.1s;
-    &:hover {
-      color: #000;
-    }
+    transition: 0.1s linear;
   }
 
   .active {

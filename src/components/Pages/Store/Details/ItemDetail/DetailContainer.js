@@ -3,11 +3,11 @@ import styled from "styled-components";
 const DetailContainer = styled.div`
   display: flex;
   position: relative;
+  top: 10vh;
   width: 100%;
-  height: 100%;
   padding: 2rem 0;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 0.25rem;
   border: 1px solid lightgrey;
   .Box-image {
     width: 100%;

@@ -2,11 +2,21 @@ import styled from "styled-components";
 
 const ShoppingContainer = styled.div`
   position: relative;
-  max-width: 720px;
-  margin: auto auto 2rem;
+  max-width: 780px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
   .box-listShopping {
+    width: 100%;
+    position: relative;
+    right: ${(props) => (props.showForm ? "100%" : "0%")};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: ${(props) => (props.showForm ? "hidden" : "visible")};
+    transition: all 0.8s linear;
     .list-title {
-      font-size: 30px;
+      font-size: 42px;
       text-align: center;
       margin-bottom: 2rem;
       color: #fff;
@@ -20,7 +30,7 @@ const ShoppingContainer = styled.div`
       align-items: center;
       min-height: 50vh;
       background: #fff;
-      border-radius: 5px;
+      border-radius: 0.25rem;
       padding: 0.5rem;
       margin-bottom: 5rem;
       p.cart-empty {
@@ -34,18 +44,19 @@ const ShoppingContainer = styled.div`
   .btn {
     position: absolute;
     bottom: -40px;
-    margin: 1rem;
-    border: none;
   }
   .btn.clearCart {
     background: #bf3f43;
     color: #fff;
+    border: none;
+    margin: auto;
   }
   .btn.goStore {
-    background: green;
-    a {
-      text-decoration: none;
+    button {
+      background: green;
       color: #fff;
+      border: none;
+      border-radius: 0.25rem;
     }
   }
   .cart-footer {
@@ -63,12 +74,11 @@ const ShoppingContainer = styled.div`
       font-weight: 300;
       p {
         width: fit-content;
-        padding: 0.3rem;
+        padding: 0.2rem 0.8rem;
         margin: 0.5rem;
         background: green;
         color: #fff;
-        border-radius: 5px;
-        font-weight: 500;
+        border-radius: 0.25rem;
       }
     }
     .quantity {
@@ -80,6 +90,7 @@ const ShoppingContainer = styled.div`
     }
   }
   .btn-buying {
+    width: auto;
     position: absolute;
     right: 0;
     bottom: 0;

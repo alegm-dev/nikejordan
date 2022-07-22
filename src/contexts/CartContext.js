@@ -1,5 +1,6 @@
 import { useState, createContext, useContext } from "react";
-import toast from "react-hot-toast";
+//import toast from "react-hot-toast";
+import { Toaster } from "../components/Toaster/Toaster";
 
 export const CartContext = createContext();
 
@@ -20,15 +21,16 @@ export const CartProvider = ({ children }) => {
             notify(quantity);
             i.quantity += quantity;
           } else if (product.stock === i.quantity) {
-            toast.error(`Superaste el stock disponible de este modelo`, {
-              id: "noStock",
-            });
+            return Toaster(
+              "error",
+              "Superaste el stock disponible de este modelo"
+            );
           } else {
-            toast.error(
+            return Toaster(
+              "warning",
               `Solo puedes agregar ${
                 product.stock - i.quantity
-              } producto de este modelo`,
-              { id: "stock" }
+              } producto de este modelo`
             );
           }
         }
@@ -43,19 +45,15 @@ export const CartProvider = ({ children }) => {
   //Notifica cuantos elemento se agregaron al carrito
   const notify = (numCounter) => {
     if (numCounter === 0) {
-      toast("Seleccione minimo 1 unidad", {
-        icon: "❗",
-        id: "noProduct",
-        duration: 2000,
-      });
+      return Toaster("error", "Seleccione minimo 1 unidad");
     } else if (numCounter > 0) {
-      toast.success(
+      return Toaster(
+        "success",
         `${
           numCounter === 1
             ? `Se agrego ${numCounter} producto`
             : `Se agregaron ${numCounter} productos`
-        } al carrito!`,
-        { id: "product", duration: 2000 }
+        } al carrito!`
       );
     }
   };
@@ -97,7 +95,7 @@ export const CartProvider = ({ children }) => {
     isInCart,
     removeFromCart,
     getQuantity,
-    getTotal,
+    getTotal
   };
 
   return (

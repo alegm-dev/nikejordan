@@ -7,13 +7,13 @@ const ButtonStyle = styled(Button)`
   top: 30px;
   padding: 1rem;
   border: none;
-  background: transparent;
-  border: 2px solid #bf3f43;
-  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #bf3f43;
+  border-radius: 0.25rem;
   white-space: nowrap;
   color: #bf3f43;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   &:hover {
     background: #bf3f43;

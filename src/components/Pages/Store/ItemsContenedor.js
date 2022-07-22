@@ -22,7 +22,7 @@ const ItemsContenedor = styled.div`
         width: 280px;
         height: 420px;
         background-color: #fff;
-        border-radius: 5px;
+        border-radius: 0.25rem;
         border: 1px solid lightgrey;
         overflow: hidden;
         ::before {
