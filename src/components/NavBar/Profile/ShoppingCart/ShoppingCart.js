@@ -22,7 +22,7 @@ export const ShoppingCart = () => {
       <CartStyled>
         <Link to="/shoppingList/">
           <AiOutlineShoppingCart />
-          {getQuantity() >= 1 ? <p>{getQuantity()}</p> : ""}
+          {getQuantity() >= 1 && <p>{getQuantity()}</p>}
         </Link>
       </CartStyled>
     </Tooltip>
