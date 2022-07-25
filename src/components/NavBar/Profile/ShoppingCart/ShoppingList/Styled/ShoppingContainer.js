@@ -40,38 +40,14 @@ export const ShoppingContainer = styled.div`
         transform: translateY(-50%);
       }
     }
-  }
-  .btn {
-    position: absolute;
-    bottom: -40px;
-  }
-  .btn.clearCart {
-    background: #bf3f43;
-    color: #fff;
-    border: none;
-    margin: auto;
-  }
-  .btn.goStore {
-    button {
-      background: green;
-      color: #fff;
-      border: none;
-      border-radius: 0.25rem;
-    }
-  }
-  .cart-footer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    h3 {
+    .total {
       display: flex;
-      justify-content: center;
       align-items: center;
       font-size: 20px;
-      font-weight: 300;
+      font-weight: bold;
+      position: absolute;
+      bottom: 8vh;
+      right: 0;
       p {
         width: fit-content;
         padding: 0.2rem 0.8rem;
@@ -81,22 +57,55 @@ export const ShoppingContainer = styled.div`
         border-radius: 0.25rem;
       }
     }
-    .quantity {
-      p {
-        background: #fff;
-        padding: 0.3rem;
-        color: #333;
+  }
+
+  .cart-footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn.goStore {
+      button {
+        background: green;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
       }
     }
-  }
-  .btn-buying {
-    width: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 1rem;
-    background: #3f43bf;
-    color: #fff;
-    border: none;
+    .btn.clearCart {
+      width: auto;
+      font-weight: bold;
+      background: transparent;
+      color: #bf3f43;
+      border: 2px solid #bf3f43;
+      &:hover {
+        background: #bf3f43;
+        color: #fff;
+      }
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      p {
+        background: #fff;
+        padding: 0.2rem 0.8rem;
+        color: #333;
+        font-size: 20px;
+        border-radius: 0.25rem;
+      }
+    }
+    .btn-buying {
+      width: auto;
+      font-weight: bold;
+      background: transparent;
+      color: #3f43bf;
+      border: 2px solid #3f43bf;
+      &:hover {
+        background: #3f43bf;
+        color: #fff;
+      }
+    }
   }
 `;

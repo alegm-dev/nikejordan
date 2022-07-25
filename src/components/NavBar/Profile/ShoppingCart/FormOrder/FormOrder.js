@@ -88,7 +88,7 @@ export const FormOrder = ({ showForm, handlerForm }) => {
                 onChange={handleChange}
                 required
               >
-                Enviar
+                ENVIAR
               </Button>
             </Grid>
           </Grid>
@@ -99,7 +99,7 @@ export const FormOrder = ({ showForm, handlerForm }) => {
         </form>
       </div>
       <div className="box-footer">
-        <Button onClick={handlerForm}>Atras</Button>
+        <Button onClick={handlerForm}>VOLVER</Button>
       </div>
     </FormContainer>
   ) : (

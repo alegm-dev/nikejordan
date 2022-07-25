@@ -10,7 +10,7 @@ const NavbaContainer = styled.div`
   box-shadow: ${(props) => props.fix && "0 0 5px 0 rgba(3,3,3, 0.2)"};
   position: ${(props) => (props.fix ? "sticky" : "relative")};
   top: 0;
-  padding: 0.5rem 1rem;
+  padding: 2rem 3rem;
   margin: auto;
   margin-bottom: 5rem;
   transition: all 0.3s linear;

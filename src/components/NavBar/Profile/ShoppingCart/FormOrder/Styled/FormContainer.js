@@ -41,9 +41,15 @@ export const FormContainer = styled.div`
     }
     .btn-submit {
       width: 100%;
+      font-weight: bold;
       border-radius: 0.25rem;
-      color: #fff;
-      background: #3f43bf;
+      color: #3f43bf;
+      background: transparent;
+      border: 2px solid #3f43bf;
+      &:hover {
+        color: #fff;
+        background: #3f43bf;
+      }
     }
   }
   .box-footer {
@@ -52,11 +58,13 @@ export const FormContainer = styled.div`
     text-align: center;
     button {
       width: 120px;
-      color: #fff;
-      background: #3f43bf;
+      font-weight: bold;
+      color: #3f43bf;
+      background: transparent;
+      border: 2px solid #3f43bf;
       &:hover {
         background: #3f43bf;
-        opacity: 0.9;
+        color: #fff;
       }
     }
   }

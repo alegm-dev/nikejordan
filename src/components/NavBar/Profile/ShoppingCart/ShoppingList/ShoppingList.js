@@ -27,29 +27,30 @@ export const ShoppingList = () => {
           ) : (
             <p className="cart-empty">El carrito esta vacio</p>
           )}
+        </ul>
+        <div className="cart-footer">
           {cart.length > 0 ? (
             <Button className="btn clearCart" onClick={() => clearCart()}>
-              Vaciar Carrito
+              VACIAR CARRITO
             </Button>
           ) : (
             <Link to="/store" className="btn goStore">
               <Button>Ir a la tienda</Button>
             </Link>
           )}
-        </ul>
-        <div className="cart-footer">
           <h3 className="quantity">
             Productos: <p>{getQuantity()}</p>
           </h3>
-          <h3 className="total">
-            Total: <p>${getTotal()}</p>
-          </h3>
+
+          {cart.length > 0 && (
+            <Button className="btn-buying" onClick={handlerForm}>
+              FINALIZAR COMPRA
+            </Button>
+          )}
         </div>
-        {cart.length > 0 && (
-          <Button className="btn-buying" onClick={handlerForm}>
-            Finalizar Compra
-          </Button>
-        )}
+        <h3 className="total">
+          Total: <p>${getTotal()}</p>
+        </h3>
       </div>
       <FormOrder showForm={showForm} handlerForm={handlerForm} />
     </ShoppingContainer>
