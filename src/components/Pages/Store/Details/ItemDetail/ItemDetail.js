@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Counter } from "../../Counter/Counter";
 import { Loader } from "../../../../Loader/Loader";
-import DetailContainer from "./DetailContainer";
+import { DetailContainer } from "./Styled/DetailContainer";
 import { ArrowBack } from "../../../../ArrowBack/ArrowBack";
 import { getProduct } from "../../../../../services/firestore";
 

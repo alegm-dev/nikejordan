@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ShoppingContainer = styled.div`
+export const ShoppingContainer = styled.div`
   position: relative;
   max-width: 780px;
   margin: auto;
@@ -100,5 +100,3 @@ const ShoppingContainer = styled.div`
     border: none;
   }
 `;
-
-export default ShoppingContainer;

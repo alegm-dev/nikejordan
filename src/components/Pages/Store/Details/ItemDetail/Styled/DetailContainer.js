@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const DetailContainer = styled.div`
+export const DetailContainer = styled.div`
   display: flex;
   position: relative;
   top: 10vh;
@@ -66,5 +66,3 @@ const DetailContainer = styled.div`
     }
   }
 `;
-
-export default DetailContainer;

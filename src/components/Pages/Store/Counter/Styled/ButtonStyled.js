@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Button from "../../../../StyledDefault/Button";
+import Button from "../../../../../styledDefault/Button";
 
-const ButtonStyled = styled(Button)`
+export const ButtonStyled = styled(Button)`
   width: 100%;
   max-width: 360px;
   margin: auto;
@@ -19,5 +19,3 @@ const ButtonStyled = styled(Button)`
   border: none;
   white-space: nowrap;
 `;
-
-export default ButtonStyled;

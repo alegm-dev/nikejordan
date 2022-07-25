@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MenuItems } from "./MenuItems";
 import { Burger } from "./Burger";
 import { SiNike, SiJordan } from "react-icons/si";
 import { Profile } from "./Profile/Profile";
-import { NavLink, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import NavbarContainer from "./Styled/NavbarContainer";
+import { MenuStyled } from "./Styled/MenuStyled";
+import { Menu } from "./MenuItems";
 import styled from "styled-components";
-import NavbarContainer from "./NavbarContainer";
-import MenuStyled from "./MenuStyled";
 
 const Logo = styled.div`
   font-size: 48px;
@@ -25,6 +25,18 @@ const Logo = styled.div`
 
 export const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
+  const [fix, setFix] = useState(false);
+
+  //Se activa la posicion sticky cuando el scroll pasa los 50px
+  const setFixed = () => {
+    let scrollTop = window.scrollY;
+    scrollTop > 50 ? setFix(true) : setFix(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", setFixed);
+    return () => window.removeEventListener("scroll", setFixed);
+  }, []);
 
   const handleClick = () => {
     setOpenNav(!openNav);
@@ -36,7 +48,7 @@ export const Navbar = () => {
   };
 
   return (
-    <NavbarContainer>
+    <NavbarContainer fix={fix}>
       <Burger openNav={openNav} handleClick={handleClick} />
       <Logo>
         <Link to="/home" className="logoLink">
@@ -47,17 +59,12 @@ export const Navbar = () => {
       <MenuStyled openNav={openNav}>
         {MenuItems.map((item) => {
           return (
-            <li key={item.Id}>
-              <NavLink
-                to={item.url}
-                className={({ isActive }) =>
-                  isActive ? "active" : `${item.cName}`
-                }
-                onClick={openNav ? handleClick : null}
-              >
-                {item.Title}
-              </NavLink>
-            </li>
+            <Menu
+              key={item.id}
+              item={item}
+              openNav={openNav}
+              handleClick={handleClick}
+            />
           );
         })}
       </MenuStyled>

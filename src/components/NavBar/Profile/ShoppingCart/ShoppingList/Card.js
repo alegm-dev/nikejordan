@@ -1,4 +1,4 @@
-import CardStyled from "./CardStyled";
+import { CardStyled } from "./Styled/CardStyled";
 import { useCartContext } from "../../../../../contexts/CartContext";
 import { Link } from "react-router-dom";
 

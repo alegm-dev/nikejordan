@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import StoreContenedor from "./StoreContenedor";
-import ItemsContenedor from "./ItemsContenedor";
+import StoreContenedor from "./Styled/StoreContenedor";
+import ItemsContenedor from "./Styled/ItemsContenedor";
 import { Loader } from "../../Loader/Loader";
 import { Filter } from "./Filter/Filter";
 import { Cards } from "./Cards/Cards";
@@ -23,32 +23,7 @@ export const Store = () => {
     }, 3000);
   }, []);
 
-  /* Firebase fetch
-useEffect(()=>{
-  const db = getFirestore();
-
-  const productRef = query(colecction(db,'products'), where('id','==), parms.id)))
-                     
-  
-  getDocs(productRef).then(snapshot)=> {
-      setProduct(snapshot.docs.map(doc => doc.data()))
-      setProduct(snapshot.docs.map(doc => doc.data().id === params.id &&oc.data())) //para details
-  })
-},[])
-  
-  */
-
-  /* Con fetch
-  
-  fetch("data.json", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json"
-        }
-      })
-      
- */ return isLoading ? (
+  return isLoading ? (
     <Loader />
   ) : (
     <StoreContenedor>

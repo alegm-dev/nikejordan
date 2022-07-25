@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Card = styled.div`
+export const CardStyled = styled.div`
   position: relative;
   width: 100%;
   min-height: 140px;
@@ -99,5 +99,3 @@ const Card = styled.div`
     }
   }
 `;
-
-export default Card;

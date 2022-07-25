@@ -1,5 +1,4 @@
 import { useState, createContext, useContext } from "react";
-//import toast from "react-hot-toast";
 import { Toaster } from "../components/Toaster/Toaster";
 
 export const CartContext = createContext();
@@ -44,9 +43,7 @@ export const CartProvider = ({ children }) => {
 
   //Notifica cuantos elemento se agregaron al carrito
   const notify = (numCounter) => {
-    if (numCounter === 0) {
-      return Toaster("error", "Seleccione minimo 1 unidad");
-    } else if (numCounter > 0) {
+    if (numCounter > 0) {
       return Toaster(
         "success",
         `${
@@ -79,7 +76,7 @@ export const CartProvider = ({ children }) => {
     return cantidad;
   };
 
-  //Multiplicar precio segun al cantidad
+  //Multiplicar precio segun la cantidad
   const getTotal = () => {
     let total = 0;
     cart.forEach((item) => {

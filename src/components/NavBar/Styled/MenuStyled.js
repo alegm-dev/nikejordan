@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Menu = styled.ul`
+export const MenuStyled = styled.ul`
   display: flex;
   margin: 1rem 0;
 
@@ -52,5 +52,3 @@ const Menu = styled.ul`
     }
   }
 `;
-
-export default Menu;

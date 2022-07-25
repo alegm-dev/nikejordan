@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HomeContainer = styled.div`
+export const HomeContainer = styled.div`
   margin: 12rem auto 0;
   width: 100%;
   height: auto;
@@ -105,5 +105,3 @@ const HomeContainer = styled.div`
     }
   }
 `;
-
-export default HomeContainer;

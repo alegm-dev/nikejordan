@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TextField, Grid } from "@mui/material";
-import Button from "../../../../../StyledDefault/Button";
-import FormContainer from "./FormContainer";
+import Button from "../../../../../styledDefault/Button";
+import { FormContainer } from "./Styled/FormContainer";
 import { SendOrder } from "../SendOrder/SendOrder";
 
 export const FormOrder = ({ showForm, handlerForm }) => {
@@ -59,7 +59,7 @@ export const FormOrder = ({ showForm, handlerForm }) => {
             </Grid>
             <Grid xs={12} item>
               <TextField
-                type="number"
+                type="tel"
                 id="outlined-basic"
                 label="Telefono"
                 name="phone"

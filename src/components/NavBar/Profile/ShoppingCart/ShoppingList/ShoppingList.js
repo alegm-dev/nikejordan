@@ -3,8 +3,8 @@ import { ArrowBack } from "../../../../ArrowBack/ArrowBack";
 import { Card } from "./Card";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import ShoppingContainer from "./ShoppingContainer";
-import Button from "../../../../../StyledDefault/Button";
+import { ShoppingContainer } from "./Styled/ShoppingContainer";
+import Button from "../../../../../styledDefault/Button";
 import { FormOrder } from "../FormOrder/FormOrder";
 
 export const ShoppingList = () => {

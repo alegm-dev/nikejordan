@@ -1,26 +1,42 @@
+import { NavLink } from "react-router-dom";
+
 export const MenuItems = [
   {
-    Id: "home",
-    Title: "Inicio",
+    id: "home",
+    title: "Inicio",
     url: "/home",
-    cName: "nav-links",
+    cName: "nav-links"
   },
   {
-    Id: "air Jordan",
-    Title: "Air Jordan",
+    id: "air Jordan",
+    title: "Air Jordan",
     url: "/airjordan",
-    cName: "nav-links",
+    cName: "nav-links"
   },
   {
-    Id: "store",
-    Title: "Tienda",
+    id: "store",
+    title: "Tienda",
     url: "/store",
-    cName: "nav-links",
+    cName: "nav-links"
   },
   {
-    Id: "contact",
-    Title: "Contacto",
+    id: "contact",
+    title: "Contacto",
     url: "/contact",
-    cName: "nav-links",
-  },
+    cName: "nav-links"
+  }
 ];
+
+export const Menu = ({ item, openNav, handleClick }) => {
+  return (
+    <li>
+      <NavLink
+        to={item.url}
+        className={({ isActive }) => (isActive ? "active" : `${item.cName}`)}
+        onClick={openNav ? handleClick : null}
+      >
+        {item.title}
+      </NavLink>
+    </li>
+  );
+};

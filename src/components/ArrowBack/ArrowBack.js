@@ -20,7 +20,7 @@ const ArrowStyle = styled.button`
 
 export const ArrowBack = ({ link }) => {
   return (
-    <Tooltip title="Volver a la tienda">
+    <Tooltip title="Volver">
       <ArrowStyle>
         <Link to={link} className="Arrow-back">
           <FiArrowLeft />

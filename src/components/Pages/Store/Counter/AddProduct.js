@@ -1,5 +1,4 @@
-import ButtonStyled from "./ButtonStyled";
-import { Toaster } from "react-hot-toast";
+import { ButtonStyled } from "./Styled/ButtonStyled";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../../../contexts/CartContext";
 
@@ -39,7 +38,6 @@ export const AddProduct = ({
   const btn = (
     <ButtonStyled stock={stock} onClick={onAdd}>
       {stock > 0 ? "Agregar al carrito" : "No hay stock"}
-      {/*<Toaster reverseOrder={true} />*/}
     </ButtonStyled>
   );
 

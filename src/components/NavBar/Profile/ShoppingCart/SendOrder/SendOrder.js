@@ -55,7 +55,7 @@ export const SendOrder = ({ buyer, isLoading, setIsLoading }) => {
       showConfirmButton: true,
       confirmButtonText: "Ir al inicio",
       confirmButtonColor: "#3f43bf",
-      html: `El numero de orden es <br>#<strong>${id}</strong> <br>Te enviamos el detalle de tu compra a<br> <strong>${buyer.email}`,
+      html: `Tu numero de orden es <br>#<strong>${id}</strong> <br>Te enviamos el detalle de tu compra a<br> <strong>${buyer.email}`,
       footer: `<small>${localDate()}</small> `,
       allowOutsideClick: false
     }).then((result) => {

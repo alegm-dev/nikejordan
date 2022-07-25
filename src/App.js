@@ -13,9 +13,9 @@ import { User } from "./components/Pages/User/User";
 export const App = () => {
   return (
     <CartProvider>
-      <div className="App">
-        <BrowserRouter>
-          <Navbar />
+      <BrowserRouter>
+        <Navbar />
+        <div className="App">
           <Routes>
             <Route
               exact
@@ -39,8 +39,8 @@ export const App = () => {
             ></Route>
             <Route exact path="*" /*element={<NotFound />}*/></Route>
           </Routes>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
     </CartProvider>
   );
 };

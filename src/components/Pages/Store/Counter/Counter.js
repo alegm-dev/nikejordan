@@ -1,36 +1,10 @@
 import { useState } from "react";
-import styled from "styled-components";
 import { GrAdd } from "react-icons/gr";
 import { GrSubtract } from "react-icons/gr";
 import { CounterIcon } from "./CounterIcon";
 import { AddProduct } from "./AddProduct";
-
-const CounterContainer = styled.div`
-  width: 100%;
-  max-width: 360px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  p.stock {
-    font-size: 14px;
-    color: grey;
-    margin: 0.2rem;
-  }
-`;
-
-const CounterWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid grey;
-  border-radius: 0.25rem;
-  width: 100%;
-  margin: auto;
-  margin: ${(props) => (props.stock === 0 ? "0rem" : "0.5rem")};
-  visibility: ${(props) => (props.stock === 0 ? "hidden" : "visible")};
-`;
+import { CounterContainer } from "./Styled/CounterContainer";
+import { CounterWrapper } from "./Styled/CounterWrapper";
 
 export const Counter = ({ stock, cardDate }) => {
   const [numCounter, setNumCounter] = useState(1);

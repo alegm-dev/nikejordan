@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FormContainer = styled.div`
+export const FormContainer = styled.div`
   display: block;
   width: 100%;
   margin: auto;
@@ -61,5 +61,3 @@ const FormContainer = styled.div`
     }
   }
 `;
-
-export default FormContainer;

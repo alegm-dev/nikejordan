@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {
   getFirestore,
@@ -6,7 +5,7 @@ import {
   getDocs,
   doc,
   getDoc,
-  addDoc,
+  addDoc
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -15,7 +14,7 @@ const firebaseConfig = {
   projectId: "nike-airjordan",
   storageBucket: "nike-airjordan.appspot.com",
   messagingSenderId: "34909686066",
-  appId: "1:34909686066:web:36a1568107006207a66f2b",
+  appId: "1:34909686066:web:36a1568107006207a66f2b"
 };
 
 // Initialize Firebase
@@ -32,7 +31,7 @@ export async function getAllProducts() {
   const dataProducts = docSnapshot.docs.map((item) => {
     const products = {
       ...item.data(),
-      id: item.id,
+      id: item.id
     };
     return products;
   });
@@ -46,7 +45,7 @@ export async function getProduct(id) {
   const docSnapshot = await getDoc(docRef);
   const product = {
     ...docSnapshot.data(),
-    id: docSnapshot.id,
+    id: docSnapshot.id
   };
 
   return product;
