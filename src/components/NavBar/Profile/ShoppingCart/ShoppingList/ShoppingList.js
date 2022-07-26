@@ -4,7 +4,7 @@ import { Card } from "./Card";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ShoppingContainer } from "./Styled/ShoppingContainer";
-import Button from "../../../../../styledDefault/Button";
+import Button from "../../../../../StyledDefault/Button";
 import { FormOrder } from "../FormOrder/FormOrder";
 
 export const ShoppingList = () => {
@@ -35,7 +35,7 @@ export const ShoppingList = () => {
             </Button>
           ) : (
             <Link to="/store" className="btn goStore">
-              <Button>Ir a la tienda</Button>
+              <Button>IR A LA TIENDA</Button>
             </Link>
           )}
           <h3 className="quantity">

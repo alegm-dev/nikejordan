@@ -50,7 +50,7 @@ const LoaderContainer = styled.div`
 export const Loader = () => {
   return (
     <LoaderContainer>
-      <span class="loader">Cargando</span>
+      <span className="loader">Cargando</span>
     </LoaderContainer>
   );
 };

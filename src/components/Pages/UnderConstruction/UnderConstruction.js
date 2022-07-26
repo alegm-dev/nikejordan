@@ -1,4 +1,4 @@
-import work from "../../../assets/image/work.jpg";
+import work from "../../../Assets/image/work.jpg";
 import styled from "styled-components";
 
 const Container = styled.div`

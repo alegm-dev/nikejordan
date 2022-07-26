@@ -67,10 +67,16 @@ export const ShoppingContainer = styled.div`
     align-items: center;
     .btn.goStore {
       button {
-        background: green;
-        color: #fff;
-        border: none;
+        width: auto;
+        background: transparent;
+        color: green;
+        font-weight: bold;
+        border: 2px solid green;
         border-radius: 0.25rem;
+        &:hover {
+          background: green;
+          color: #fff;
+        }
       }
     }
     .btn.clearCart {

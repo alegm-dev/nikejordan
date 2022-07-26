@@ -1,13 +1,13 @@
 import { HomeContainer } from "./Styled/HomeContainer";
-import ShoesJOrdan from "../../../assets/image/Jordan01.png";
-import Button from "../../../styledDefault/Button";
+import ShoesJOrdan from "../../../Assets/image/Jordan01.png";
+import Button from "../../../StyledDefault/Button";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
     <HomeContainer>
       <div className="Home-left">
-        <h3>CONVIÉRTETE EN LEGENDARIO</h3>
+        <h3>CONVIÉRTETE EN LEYENDA</h3>
       </div>
       <div className="Home-center">
         <img src={ShoesJOrdan} alt="zapatillas Jordan 01" />
