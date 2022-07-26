@@ -41,6 +41,11 @@ export const FormOrder = ({ showForm, handlerForm }) => {
                 label="Nombre"
                 name="name"
                 variant="outlined"
+                inputProps={{
+                  pattern: "[A-Za-z]{1,20}",
+                  title:
+                    "Solo puede contener caracteres alfabeticos y no se permite espacios."
+                }}
                 onChange={handleChange}
                 fullWidth
                 required
@@ -52,6 +57,11 @@ export const FormOrder = ({ showForm, handlerForm }) => {
                 label="Apellido"
                 name="lastName"
                 variant="outlined"
+                inputProps={{
+                  pattern: "[A-Za-z]{1,20}",
+                  title:
+                    "Solo puede contener caracteres alfabeticos y no se permite espacios."
+                }}
                 onChange={handleChange}
                 fullWidth
                 required
@@ -64,6 +74,12 @@ export const FormOrder = ({ showForm, handlerForm }) => {
                 label="Telefono"
                 name="phone"
                 variant="outlined"
+                inputProps={{
+                  inputMode: "numeric",
+                  pattern: "[0-9]{10}",
+                  title:
+                    "El telefono tiene que tener 10 digitos y solo puede contener caracteres numericos. (Ej: 1123456789)"
+                }}
                 onChange={handleChange}
                 fullWidth
                 required

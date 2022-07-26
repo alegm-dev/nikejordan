@@ -25,7 +25,7 @@ export const Details = ({ item }) => {
   return (
     <>
       <Link to={`/itemDetail/${item.id}`}>
-        <ButtonStyle>Ver mas</ButtonStyle>
+        <ButtonStyle>Ver más</ButtonStyle>
       </Link>
     </>
   );

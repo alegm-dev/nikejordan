@@ -15,7 +15,7 @@ export const Home = () => {
         <h3>SALTA COMO ÉL</h3>
         <div className="center-btn">
           <Link to="/store">
-            <Button className="see-more">Ver mas</Button>
+            <Button className="see-more">Ver más</Button>
           </Link>
         </div>
       </div>

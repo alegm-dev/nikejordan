@@ -23,7 +23,9 @@ export const Card = ({ item }) => {
         <div className="price">
           <p>${Intl.NumberFormat("es-AR").format(product.price)}</p>
         </div>
-        <p className="quantity">(X{quantity})</p>
+        <p className="quantity">
+          ({quantity === 1 ? `${quantity} unidad` : `${quantity} unidades`})
+        </p>
       </li>
       <li className="box-delete">
         <button

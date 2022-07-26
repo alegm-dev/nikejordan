@@ -20,7 +20,7 @@ const Container = styled.div`
 export const UnderConstruction = () => {
   return (
     <Container>
-      <h3>Pagina en construcción...</h3>
+      <h3>Página en construcción...</h3>
       <img src={work} alt="pagina en construccion" />
     </Container>
   );
