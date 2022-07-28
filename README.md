@@ -9,10 +9,12 @@ Cuenta con :
 - Vista de detalles: vista con todos los detalles del producto y la opción de agregar una cantidad del mismo.
 - Control de stock: revisa que los usuarios no puedan agregar más ítems al carrito de los que hay disponibles, y revisa el stock real al momento de generar la compra.
 - Carrito: cuenta con vista completa de los ítems del carrito, el total de producto y precio, eliminar un producto y o vaciar el carrito.
-  -Formulario: guarda los datos del comprador en la base de dato.
-  -Notificaciones: notifica la cantidad que se agrega al carrito, si superaste o no el stock.
+  - Formulario: guarda los datos del comprador en la base de dato.
+  - Notificaciones: notifica la cantidad que se agrega al carrito, si superaste o no el stock.
+
+Se creo un componente que informa que una seccion de la pagina se encuentra en construccion, y se aplica para no mostrar una pagina en blanco. Estas secciones no corresponden al proyecto final del e-commerce de coderhouse pero se inplementaran a futuro.
   
-## Demo Live :
+## Demo :
 
 ![alt text](https://github.com/alegm-dev/nikejordan/blob/main/src/Assets/gif/demo.gif?raw=true "video demostración")
 
