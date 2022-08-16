@@ -12,7 +12,7 @@ Cuenta con :
 - Formulario: guarda los datos del comprador en la base de dato.
 - Notificaciones: notifica la cantidad que se agrega al carrito, si superaste o no el stock.
 
-  - Se creo un componente que informa que una seccion de la pagina se encuentra en construccion, y se aplica para no mostrar una pagina en blanco. Estas secciones no corresponden al proyecto final del e-commerce de coderhouse pero se inplementaran a futuro.
+  - Se creó un componente que informa que una sección de la página se encuentra en construcción, y se aplica para no mostrar una página en blanco. Estas secciones no corresponden al proyecto final del e-commerce de Coderhouse pero se implementarán a futuro.
   
 ## Demo :
 
